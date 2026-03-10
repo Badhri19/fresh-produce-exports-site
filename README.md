@@ -1,4 +1,4 @@
-﻿# FRIENDS ENTERPRISES EXIM - Static Website
+﻿# FRIENDS FARM FRESH - Static Website
 
 Professional B2B export website for an India-based agricultural export company.
 
@@ -28,7 +28,7 @@ This site is fully static and works on GitHub Pages without backend services.
 - `assets/` - images and product media
 
 ## Deploy to GitHub Pages (Main Branch)
-1. Create a new GitHub repository (for example: `friends-enterprises-exim-site`).
+1. Create a new GitHub repository (for example: `friends-farm-fresh-site`).
 2. Push this full project to the repository.
 3. In GitHub: `Settings -> Pages`.
 4. Under **Build and deployment**:
@@ -41,7 +41,7 @@ This site is fully static and works on GitHub Pages without backend services.
 
 ## Custom Domain (Later)
 To connect a custom domain later:
-1. In GitHub Pages settings, set your custom domain (for example: `freshproduce.in`).
+1. In GitHub Pages settings, set your custom domain (for example: `friendsfarmfresh.in`).
 2. Update DNS records at your domain registrar:
    - `A` records to GitHub Pages IPs (for apex domain)
    - `CNAME` record to `<your-github-username>.github.io` (for subdomain like `www`)
@@ -50,3 +50,5 @@ To connect a custom domain later:
 ## Notes
 - `.nojekyll` is included so GitHub Pages serves all static files exactly as-is.
 - No server-side runtime is required.
+
+
