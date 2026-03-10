@@ -113,7 +113,7 @@ function collectInquiryData(form) {
 
 function buildInquiryDraft(data) {
   const lines = [
-    "Hello FRESH PRODUCE EXPORTS Team,",
+    "Hello FRIENDS FARM FRESH Team,",
     "",
     "Please find our product requirement details:",
     "",
@@ -156,7 +156,7 @@ function collectContactData(form) {
 
 function buildContactDraft(data) {
   const lines = [
-    "Hello FRESH PRODUCE EXPORTS Team,",
+    "Hello FRIENDS FARM FRESH Team,",
     "",
     "Please find our contact inquiry details:",
     "",
@@ -410,6 +410,7 @@ updateScrollBlur();
 updateHomeNavState();
 setupRevealAnimations();
 injectWhatsAppFloat();
+
 
 
 
