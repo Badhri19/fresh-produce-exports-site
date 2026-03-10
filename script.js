@@ -1,4 +1,5 @@
-﻿const menuBtn = document.querySelector(".menu-btn");
+﻿document.documentElement.classList.add('js-enabled');
+const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
 
 if (menuBtn && navLinks) {
@@ -408,6 +409,7 @@ updateScrollBlur();
 updateHomeNavState();
 setupRevealAnimations();
 injectWhatsAppFloat();
+
 
 
 
