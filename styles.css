@@ -110,8 +110,17 @@ a {
   display: inline-flex;
   align-items: baseline;
   gap: 1px;
+  text-shadow:
+    0 0 1px #000,
+    1px 0 0 #000,
+    -1px 0 0 #000,
+    0 1px 0 #000,
+    0 -1px 0 #000,
+    1px 1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
 }
-
 .brand-initial {
   font-size: 1.3em;
   line-height: 1;
@@ -475,7 +484,19 @@ textarea {
 }
 
 .home-page .topbar .brand-word {
-  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.22);
+  display: inline-flex;
+  align-items: baseline;
+  gap: 1px;
+  text-shadow:
+    0 0 1px #000,
+    1px 0 0 #000,
+    -1px 0 0 #000,
+    0 1px 0 #000,
+    0 -1px 0 #000,
+    1px 1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
 }
 .home-page .topbar .nav-links a {
   color: #f6fff6;
@@ -591,7 +612,19 @@ textarea {
 }
 
 .home-page .topbar .brand-word {
-  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.22);
+  display: inline-flex;
+  align-items: baseline;
+  gap: 1px;
+  text-shadow:
+    0 0 1px #000,
+    1px 0 0 #000,
+    -1px 0 0 #000,
+    0 1px 0 #000,
+    0 -1px 0 #000,
+    1px 1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
 }
 .home-page .topbar .nav-links a {
   color: #f3f8f2;
@@ -775,6 +808,7 @@ textarea {
     max-width: 100%;
   }
 }
+
 
 
 
