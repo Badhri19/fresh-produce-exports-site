@@ -535,16 +535,20 @@ textarea {
 }
 
 .reveal {
+  opacity: 1;
+  transform: none;
+}
+
+.js-enabled .reveal {
   opacity: 0;
   transform: translateY(34px);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.reveal.visible {
+.js-enabled .reveal.visible {
   opacity: 1;
   transform: translateY(0);
 }
-
 @media (max-width: 980px) {
   .cover-hero h1 {
     white-space: normal;
@@ -776,6 +780,7 @@ textarea {
     max-width: 100%;
   }
 }
+
 
 
 
