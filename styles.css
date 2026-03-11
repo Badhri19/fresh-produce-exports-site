@@ -33,15 +33,13 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -2;
-  background-image: url("assets/back1.jpg");
+  background-image: url("assets/1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   filter: blur(calc(var(--scroll-blur) * 1px));
   transform: scale(1.02);
-}
-
-body::after {
+}\nbody::after {
   content: "";
   position: fixed;
   inset: 0;
@@ -780,6 +778,8 @@ textarea {
     max-width: 100%;
   }
 }
+
+
 
 
 
