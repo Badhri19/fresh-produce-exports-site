@@ -33,7 +33,7 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -2;
-  background-image: url("assets/background photo.jpg");
+  background-image: url("assets/back1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -780,6 +780,7 @@ textarea {
     max-width: 100%;
   }
 }
+
 
 
 
