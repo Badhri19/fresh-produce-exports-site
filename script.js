@@ -185,7 +185,7 @@ function sendContactInquiry(form, channel) {
   }
 
   const companyWhatsApp = "919940434138";
-  const companyEmail = "info@friendsfarmfresh.com";\n  const ccEmail = "badhri191101@gmail.com";
+  const companyEmail = "info@friendsfarmfresh.com";`r`n  const ccEmail = "badhri191101@gmail.com";
   const data = collectContactData(form);
   const draft = buildContactDraft(data);
 
@@ -196,7 +196,7 @@ function sendContactInquiry(form, channel) {
     return;
   }
 
-  const subject = `New Contact Inquiry - ${data.product || "General Requirement"}`;\n  const mailtoUrl = `mailto:${companyEmail}?cc=${encodeURIComponent(ccEmail)}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(draft)}`;
+  const subject = `New Contact Inquiry - ${data.product || "General Requirement"}`;`r`n  const mailtoUrl = `mailto:${companyEmail}?cc=${encodeURIComponent(ccEmail)}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(draft)}`;
   window.location.href = mailtoUrl;
   setFormMessage(form, "Email draft opened. Please review and send.", "success");
 }
@@ -209,7 +209,7 @@ function sendInquiry(form, channel) {
   }
 
   const companyWhatsApp = "919940434138";
-  const companyEmail = "info@friendsfarmfresh.com";\n  const ccEmail = "badhri191101@gmail.com";
+  const companyEmail = "info@friendsfarmfresh.com";`r`n  const ccEmail = "badhri191101@gmail.com";
   const data = collectInquiryData(form);
   const draft = buildInquiryDraft(data);
 
@@ -220,7 +220,7 @@ function sendInquiry(form, channel) {
     return;
   }
 
-  const subject = `New Product Inquiry - ${data.productName || "Custom Requirement"}`;\n  const mailtoUrl = `mailto:${companyEmail}?cc=${encodeURIComponent(ccEmail)}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(draft)}`;
+  const subject = `New Product Inquiry - ${data.productName || "Custom Requirement"}`;`r`n  const mailtoUrl = `mailto:${companyEmail}?cc=${encodeURIComponent(ccEmail)}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(draft)}`;
   window.location.href = mailtoUrl;
   setFormMessage(form, "Email draft opened. Please review and send.", "success");
 }
@@ -462,6 +462,7 @@ updateHomeNavState();
 setupRevealAnimations();
 injectWhatsAppFloat();
 setupCertificateViewer();
+
 
 
 
