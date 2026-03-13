@@ -381,6 +381,57 @@ function setupRevealAnimations() {
   revealItems.forEach((item) => observer.observe(item));
 }
 
+function setupCertificateViewer() {
+  const modal = document.getElementById("certModal");
+  if (!modal) return;
+
+  const frame = document.getElementById("certModalFrame");
+  const title = document.getElementById("certModalTitle");
+  const cards = document.querySelectorAll(".cert-card");
+  const closeButtons = modal.querySelectorAll("[data-cert-close]");
+
+  const closeModal = () => {
+    modal.classList.remove("open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("modal-open");
+    if (frame) frame.src = "";
+  };
+
+  const openModal = (card) => {
+    const src = card.dataset.cert;
+    if (!src || !frame) return;
+    const label = card.dataset.title || "Certificate";
+    if (title) title.textContent = label;
+    frame.src = `${src}#toolbar=0&navpanes=0&scrollbar=0`;
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
+  };
+
+  cards.forEach((card) => {
+    card.addEventListener("click", () => openModal(card));
+  });
+
+  closeButtons.forEach((btn) => {
+    btn.addEventListener("click", closeModal);
+  });
+
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+
+  modal.addEventListener("contextmenu", (event) => {
+    event.preventDefault();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && modal.classList.contains("open")) {
+      closeModal();
+    }
+  });
+}
 function injectWhatsAppFloat() {
   if (document.querySelector(".whatsapp-float")) return;
 
@@ -410,6 +461,8 @@ updateScrollBlur();
 updateHomeNavState();
 setupRevealAnimations();
 injectWhatsAppFloat();
+setupCertificateViewer();
+
 
 
 

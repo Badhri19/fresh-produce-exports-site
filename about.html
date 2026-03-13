@@ -59,6 +59,67 @@
     </div>
   </section>
 
+  <section class="section reveal" id="certificates">
+    <div class="container">
+      <h2 class="section-title">Government Certificates</h2>
+      <p class="section-subtitle">Preview our registrations and certifications. Click any document to view.</p>
+      <div class="cert-strip" role="list">
+        <button class="cert-card" type="button" data-cert="certificates/APEDA%20RCMC%20Certificate.pdf" data-title="APEDA RCMC Certificate">
+          <div class="cert-preview">
+            <embed src="certificates/APEDA%20RCMC%20Certificate.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" />
+            <span class="cert-preview-overlay">Click to View</span>
+          </div>
+          <div class="card-body">
+            <h3>APEDA RCMC Certificate</h3>
+            <p>Registered exporter recognition.</p>
+          </div>
+        </button>
+        <button class="cert-card" type="button" data-cert="certificates/IEC%20CERT%20Icegate%20%281%29.pdf" data-title="IEC Certificate">
+          <div class="cert-preview">
+            <embed src="certificates/IEC%20CERT%20Icegate%20%281%29.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" />
+            <span class="cert-preview-overlay">Click to View</span>
+          </div>
+          <div class="card-body">
+            <h3>IEC Certificate</h3>
+            <p>IEC licensed export business.</p>
+          </div>
+        </button>
+        <button class="cert-card" type="button" data-cert="certificates/GST%20certificate%20%20%281%29.pdf" data-title="GST Certificate">
+          <div class="cert-preview">
+            <embed src="certificates/GST%20certificate%20%20%281%29.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" />
+            <span class="cert-preview-overlay">Click to View</span>
+          </div>
+          <div class="card-body">
+            <h3>GST Certificate</h3>
+            <p>GST registered exporter credentials.</p>
+          </div>
+        </button>
+        <button class="cert-card" type="button" data-cert="certificates/FIEO%20cert.pdf" data-title="FIEO Certificate">
+          <div class="cert-preview">
+            <embed src="certificates/FIEO%20cert.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" />
+            <span class="cert-preview-overlay">Click to View</span>
+          </div>
+          <div class="card-body">
+            <h3>FIEO Certificate</h3>
+            <p>Federation of Indian Export Organisations membership.</p>
+          </div>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="cert-modal" id="certModal" aria-hidden="true">
+    <div class="cert-modal-backdrop" data-cert-close></div>
+    <div class="cert-modal-panel" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
+      <button class="cert-modal-close" type="button" data-cert-close>Close</button>
+      <h3 class="cert-modal-title" id="certModalTitle">Certificate Preview</h3>
+      <div class="cert-viewer">
+        <iframe id="certModalFrame" title="Certificate preview" src="" loading="lazy" sandbox="allow-same-origin allow-scripts" referrerpolicy="no-referrer"></iframe>
+        <div class="cert-watermark">Friends Farm Fresh</div>
+      </div>
+      <p class="muted" style="margin:12px 0 0">Viewing only. Download and printing are disabled in the interface.</p>
+    </div>
+  </div>
   <section class="cta-band">
     <div class="container split">
       <div>
@@ -81,6 +142,8 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+
 
 
 
