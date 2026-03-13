@@ -386,7 +386,8 @@ function injectWhatsAppFloat() {
 
   const link = document.createElement("a");
   link.className = "whatsapp-float";
-  const floatMessage = encodeURIComponent("Hello, I am interested in your agricultural export products.");\n  link.href = `https://wa.me/919940434138?text=${floatMessage}`;
+  const floatMessage = encodeURIComponent("Hello, I would like to learn more about your products and export capabilities.");
+  link.href = `https://wa.me/919940434138?text=${floatMessage}`;
   link.target = "_blank";
   link.rel = "noopener noreferrer";
   link.setAttribute("aria-label", "Chat on WhatsApp");
@@ -409,6 +410,8 @@ updateScrollBlur();
 updateHomeNavState();
 setupRevealAnimations();
 injectWhatsAppFloat();
+
+
 
 
 
