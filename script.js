@@ -402,7 +402,7 @@ function setupCertificateViewer() {
     if (!src || !frame) return;
     const label = card.dataset.title || "Certificate";
     if (title) title.textContent = label;
-    frame.src = `${src}#toolbar=0&navpanes=0&scrollbar=0`;
+    frame.src = `${encodeURI(src)}#toolbar=0&navpanes=0&scrollbar=0`;
     modal.classList.add("open");
     modal.setAttribute("aria-hidden", "false");
     document.body.classList.add("modal-open");
@@ -462,6 +462,7 @@ updateHomeNavState();
 setupRevealAnimations();
 injectWhatsAppFloat();
 setupCertificateViewer();
+
 
 
 
